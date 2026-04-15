@@ -128,6 +128,9 @@ class DocumentIngestionPipeline:
         normalized = re.sub(r"[^\S\n]+", " ", normalized)
         normalized = re.sub(r"[%&]{3,}", "", normalized)
         normalized = re.sub(r"[^\w\s.,;:!?()'\"/%&-]", "", normalized)
+        normalized = re.sub(r"\.{4,}", "...", normalized)
+        normalized = re.sub(r"([!?])\1{3,}", r"\1\1\1", normalized)
+        normalized = re.sub(r"[ \t]+", " ", normalized)
         normalized = re.sub(r" ?\n ?", "\n", normalized)
         return normalized.strip()
 

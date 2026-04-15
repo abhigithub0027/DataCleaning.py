@@ -49,3 +49,24 @@ def test_clean_text_removes_symbol_noise_but_keeps_common_punctuation(tmp_path: 
     assert "readable!!!" in cleaned
     assert "25%" in cleaned
     assert "R&D use & should remain." in cleaned
+
+
+def test_clean_text_normalizes_long_punctuation_runs(tmp_path: Path) -> None:
+    config = DocumentIngestionConfig(
+        input_dir=tmp_path,
+        output_file=tmp_path / "output" / "chunks.json",
+    )
+    pipeline = DocumentIngestionPipeline(config)
+
+    dirty_text = (
+        "My name is Abhishek Yadav!...............#######@@@@@&&&&\n"
+        "I am from Ayodhya!@@@###$$$..."
+    )
+
+    cleaned = pipeline._clean_text(dirty_text)
+
+    assert "Abhishek Yadav!..." in cleaned
+    assert "Ayodhya!..." in cleaned
+    assert "#######" not in cleaned
+    assert "@@@###$$$" not in cleaned
+    assert "&&&&" not in cleaned
