@@ -1,0 +1,20 @@
+[
+  {
+    "file_name": "Budget_Rules.txt",
+    "chunk_id": 1,
+    "chunk_text": "Budget planning should begin with a realistic understanding of revenue, operating expenses, and reserve obligations...\n\nDepartments must submit forecasts with clear assumptions, supporting line items, and a summary of expected business impact!!!\n\nReviews should compare proposed allocations against last quarter's spending pattern and current organizational priorities.\n\nIf exceptional spending is requested, the proposal should explain urgency, dependency risks, and measurable outcomes\nLeadership review should document approvals, deferrals, or requests for revision so the budget trail stays transparent and easy to audit.",
+    "length": 625,
+    "chunk_length": 625,
+    "start_char": 0,
+    "end_char": 625
+  },
+  {
+    "file_name": "Policy_Update.txt",
+    "chunk_id": 1,
+    "chunk_text": "The employee handbook was revised to clarify attendance expectations, remote work approval, and reimbursement procedures!!!\n\nManagers are expected to communicate policy changes in team meetings and confirm that employees know where to find the latest version.\n\nQuestions that affect payroll, benefits, or compliance should be escalated to the appropriate operations team instead of being answered informally%%%\n\nWhen a policy contains legal or regulatory obligations, the affected sections should be reviewed as a complete concept...\nSplitting those statements too aggressively can remove the context required to interpret deadlines, exceptions, and responsibilities correctly.",
+    "length": 677,
+    "chunk_length": 677,
+    "start_char": 0,
+    "end_char": 677
+  }
+]

@@ -1,0 +1,12 @@
+Hello,
+
+This   is    a    messy		text!!!   
+It has non-breaking spaces:  here, weird symbols ### $$$ ^^^,
+and too many blank lines.
+
+
+
+Also some tabs		and random chars <>[]{}|~`+=.
+Budget    data should stay readable,    even when input is noisy.
+
+Policy notes%%% should be cleaned, but common punctuation like commas, periods, and question marks? should remain.

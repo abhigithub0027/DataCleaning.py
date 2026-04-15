@@ -1,0 +1,22 @@
+﻿{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Smart Doc Ingestion",
+      "type": "python",
+      "request": "launch",
+      "module": "smart_doc_ingestion.cli",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "args": [
+        "--input-dir",
+        "sample_input",
+        "--output-file",
+        "output/chunks.json"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
